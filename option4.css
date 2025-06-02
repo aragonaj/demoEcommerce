@@ -31,13 +31,13 @@
 /* Exo 2 */
 @font-face {
   font-family: 'Cooper Hewitt Heavy';
-  src: url('/fonts/cooper-hewitt/CooperHewitt-Bold.otf') format('truetype');
+  src: url('fonts/cooper-hewitt/CooperHewitt-Bold.otf') format('truetype');
 }
 
 /* Alegreya Sans */
 @font-face {
   font-family: 'Cooper Hewitt';
-  src: url('/fonts/cooper-hewitt/CooperHewitt-Thin.otf') format('truetype');
+  src: url('fonts/cooper-hewitt/CooperHewitt-Thin.otf') format('truetype');
 }
 
 .site-name {
