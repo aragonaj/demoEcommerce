@@ -27,13 +27,13 @@
 /* Exo 2 */
 @font-face {
   font-family: 'Exo 2';
-  src: url('/fonts/exo_2/Exo2-Bold.otf') format('truetype');
+  src: url('./fonts/exo_2/Exo2-Bold.otf') format('truetype');
 }
 
 /* Alegreya Sans */
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf') format('truetype');
+  src: url('./fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf') format('truetype');
 }
 
 /* fuentes */
