@@ -21,13 +21,13 @@
 /* Exo 2 */
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+  src: url('fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
 }
 
 /* Alegreya Sans */
 @font-face {
   font-family: 'Old Standard TT';
-  src: url('/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
+  src: url('fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
 }
 
 .site-name {
