@@ -1,0 +1,299 @@
+:root {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	--font-heading: 'Bebas Neue', sans-serif;
+	--font-body: 'Old Standard TT', serif;
+
+	--h1-size: clamp(20px, 3vw, 2.25rem);
+	--h2-size: clamp(19px, 2.5vw, 2rem);
+	--h3-size: clamp(18px, 2vw, 1.75rem);
+	--h4-size: clamp(17px, 1.5vw, 1.5rem);
+	--h5-size: clamp(16px, 1vw, 1.25rem);
+
+	--size-large: clamp(16px, 2vw, 1.5rem);
+  	--size-medium: clamp(13px, 1.5vw, 1.25rem);
+  	--size-small: clamp(10px, 1vw, 1rem);
+}
+/*.................................................*/
+/*...... fuentes ..................................*/
+/* Exo 2 */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+
+/* Alegreya Sans */
+@font-face {
+  font-family: 'Old Standard TT';
+  src: url('/fonts/Old_Standard_TT/OldStandardTT-Regular.ttf') format('truetype');
+}
+
+.site-name {
+	font-family: var(--font-heading); 
+	font-weight: bold;
+	font-size: var(--h1-size);
+}
+
+.link, .p {
+	font-family: var(--font-body);
+	font-weight: normal;
+	font-size: var(--size-small);
+}
+/*.................................................*/
+/*...... header ...................................*/
+.header {
+	position: relative;
+
+	padding: .25rem 3rem;
+}
+
+.header
+.icon {
+	height: 16px;
+	width: 16px;
+}
+
+.header
+.p {
+	margin: 0;
+	padding: 0;
+}
+
+.header
+.link {
+	text-decoration: none;
+	color: black;
+}
+
+.top-header__container {
+	height: 1.5rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header
+.contact-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.header
+.email-contact__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: .25rem;
+}
+
+.header
+.tel-contact__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: .25rem;
+}
+
+.header
+.user-nav {
+	display: flex;
+	gap: 1rem;
+}
+
+.bottom-header__container {
+	height: 3rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bottom-header__container
+.icon {
+	height: 30px;
+	width: 30px;
+}
+
+.bottom-header__container
+.site-nav {
+	display: flex;
+	gap: 2rem;
+}
+
+.bottom-header__container
+.search-fav-cart__container {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.bottom-header__container
+.search-container {
+	height: 1.2rem;
+	width: 15rem;
+
+	padding: 0 .5rem;
+
+	display: flex;
+	align-items: center;
+
+	outline: 1px solid black;
+	border: 1px solid black;
+	border-radius: 40px;
+}
+
+.bottom-header__container
+.search-container
+.icon {
+	height: 16px;
+	width: 16px;
+}
+
+/*.................................................*/
+/*...... tabla ....................................*/
+.table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+/*.................................................*/
+/*...... footer ...................................*/
+.footer {
+	height: 40dvh;
+
+	padding: .25rem 3rem;
+}
+
+.footer
+.icon {
+	height: 16px;
+	width: 16px;
+}
+
+.footer-wrapper {
+	height: 90%;
+
+	display: grid;
+	grid-template-columns: 15% 30% 30% 30%;
+}
+
+.footer-wrapper
+.site-title {
+	padding: 0 .5rem;
+
+	overflow: hidden;
+}
+
+.footer
+.contact-info__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer
+.contact-info__container
+.email-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: .25rem;
+}
+
+.footer
+.contact-info__container
+.tel-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: .25rem;
+}
+
+.footer
+.footer-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+.footer
+.footer-nav
+.link {
+	text-decoration: none;
+	color: black;
+}
+
+.footer-bottom {
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 1200px){
+
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+
+    td:nth-of-type(1):before { content: "First Name"; }
+	td:nth-of-type(2):before { content: "Last Name"; }
+	td:nth-of-type(3):before { content: "Job Title"; }
+}
