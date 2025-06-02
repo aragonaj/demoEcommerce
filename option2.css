@@ -21,13 +21,13 @@
 /* Exo 2 */
 @font-face {
   font-family: 'Aqua Grotesque';
-  src: url('/fonts/aqua/aqua.ttf') format('truetype');
+  src: url(fonts/aqua/aqua.ttf') format('truetype');
 }
 
 /* Alegreya Sans */
 @font-face {
   font-family: 'Roboto Slab';
-  src: url('/fonts/Roboto_Slab/static/RobotoSlab-Thin.ttf') format('truetype');
+  src: url(fonts/Roboto_Slab/static/RobotoSlab-Thin.ttf') format('truetype');
 }
 
 .site-name {
